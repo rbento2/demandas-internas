@@ -1,0 +1,32 @@
+@import '_variaveis.sass'
+.menu-superior
+   width: 100%
+   background-color: $cor-celulardireto
+   position: relative
+& .-claro
+    background-color: $cor-claro
+& .-oi
+    background-color: $cor-oi
+& .-nextel
+    background-color: $cor-nextel
+& .-tim
+    background-color: $cor-tim
+& .-vivo
+    background-color: $cor-vivo   
+   >.titulo
+        color: #FFF
+        height: 22px
+        left: 3%
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 150px
+   >.lista
+        text-align: right
+        >.itemlista
+            color:#FFF 
+            display: inline-block
+            list-style: none
+            padding: 15px
+            &:hover
+                background-color: #104E8B

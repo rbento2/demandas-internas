@@ -1,0 +1,69 @@
+/*------------------- Variaveis -------------------*/
+/* ------------------ Estilo ----------------------*/
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+/*Reset*/
+/*Menu superior*/
+.menu-superior {
+  width: 100%;
+  background-color: #4682B4;
+  position: relative;
+}
+
+.menu-superior > .titulo {
+  color: #FFF;
+  height: 22px;
+  left: 3%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 150px;
+}
+
+.menu-superior > .lista {
+  text-align: right;
+}
+
+.menu-superior > .lista > .itemlista {
+  color: #FFF;
+  display: inline-block;
+  list-style: none;
+  padding: 15px;
+}
+
+.menu-superior > .lista > .itemlista:hover {
+  background-color: #104E8B;
+}
+
+/*Componente Login*/
+.form-login {
+  border: 1px solid #696969;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px 1px #696969;
+  margin: 10% auto;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  width: 30%;
+}
+
+.form-login > .input {
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.form-login .-submit {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=maps/styles.css.map */
