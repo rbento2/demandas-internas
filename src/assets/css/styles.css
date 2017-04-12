@@ -2,8 +2,8 @@
 /* ------------------ Estilo ----------------------*/
 * {
   margin: 0px;
-  padding: 0px;
   border: 0px;
+  padding: 0px;
 }
 
 /*Reset*/
@@ -12,6 +12,26 @@
   width: 100%;
   background-color: #4682B4;
   position: relative;
+}
+
+.menu-superior .-claro {
+  background-color: red;
+}
+
+.menu-superior .-oi {
+  background-color: yellow;
+}
+
+.menu-superior .-nextel {
+  background-color: #000;
+}
+
+.menu-superior .-tim {
+  background-color: blue;
+}
+
+.menu-superior .-vivo {
+  background-color: purple;
 }
 
 .menu-superior > .titulo {
@@ -34,6 +54,11 @@
   display: inline-block;
   list-style: none;
   padding: 15px;
+}
+
+.menu-superior > .lista > .itemlista > .link {
+  color: #FFF;
+  text-decoration: none;
 }
 
 .menu-superior > .lista > .itemlista:hover {
