@@ -1,30 +1,71 @@
 /*------------------- Variaveis -------------------*/
 $cor-celulardireto: #4682B4
-$cor-claro: red
-$cor-oi: yellow
-$cor-nextel: #000
-$cor-tim: blue
+$cor-claro: #d52b1e
+$cor-oi: linear-gradient(76deg,rgba(234,40,140,.9),rgba(246,79,60,.9) 80%);
+$cor-nextel: #ff6f00
+$cor-tim: #004691
 $cor-vivo: purple 
 
 
-/* ------------------ Estilo ----------------------*/
-@import '_reset.sass' /*Reset*/
+$overcolor-celulardireto: #104E8B 
+$overcolor-claro: #8B0000 
+$overcolor-oi: #C71585
+$overcolor-nextel: #FFA500
+$overcolor-tim: blue
+$overcolor-vivo: #4B0082 
 
-/*Menu superior*/
+@import '_reset.sass' /*Reset*/
+body
+    font-family: 'Arial Rounded MT Bold','Tahoma'
+
+
 .menu-superior
    width: 100%
    background-color: $cor-celulardireto
    position: relative
-   & .-claro
-    background-color: $cor-claro
-   & .-oi
-    background-color: $cor-oi
-   & .-nextel
-    background-color: $cor-nextel
-   & .-tim
-    background-color: $cor-tim
-   & .-vivo
-    background-color: $cor-vivo   
+   &.-claro
+        background-color: $cor-claro
+        >.listaoperadora
+            >.itemoperadora
+             &:hover
+                background-color: $overcolor-claro     
+   &.-nextel
+        background-color: $cor-nextel
+        >.listaoperadora
+            >.itemoperadora
+             &:hover
+                background-color: $overcolor-nextel
+   &.-oi
+        background: $cor-oi
+        >.listaoperadora
+            >.itemoperadora
+             &:hover
+                background-color: $overcolor-oi
+   &.-tim
+        background-color: $cor-tim
+        >.listaoperadora
+            >.itemoperadora
+             &:hover
+                background-color: $overcolor-tim
+   &.-vivo
+        background-color: $cor-vivo
+        >.listaoperadora
+            >.itemoperadora
+             &:hover
+                background-color: $overcolor-vivo
+   >.listaoperadora
+        text-align: right
+        >.itemoperadora
+            color:#FFF 
+            display: inline-block
+            list-style: none
+            padding: 15px
+            &:hover
+                background-color: $overcolor-celulardireto  
+            >.link
+                color: #FFF
+                text-decoration: none
+                              
    >.titulo
         color: #FFF
         height: 22px
@@ -33,38 +74,55 @@ $cor-vivo: purple
         top: 50%
         transform: translateY(-50%)
         width: 150px
-   >.lista
-        text-align: right
-        >.itemlista
-            color:#FFF 
-            display: inline-block
-            list-style: none
-            padding: 15px
-            >.link
-                color: #FFF
-                text-decoration: none
-            &:hover
-                background-color: #104E8B
-           
-/*Componente Login*/
-.form-login
+
+
+
+
+.form
     border: 1px solid #696969
     border-radius: 10px
     box-shadow: 1px 1px 15px 1px #696969
-    margin: 10% auto
     padding: 30px
     position: relative
     text-align: center
-    width: 30%
-    >.input
-        border: 1px solid #000
-        border-radius: 4px
-        padding: 6px 12px
-    & .-submit
-        background-color: #5cb85c
-        border-color: #4cae4c
-        color: #FFF
-        font-size: 15px
-        font-weight: 500
-            
-        
+    &.-login
+        margin: 10% auto
+        width: 30%
+        >.input
+            border: 1px solid #000
+            border-radius: 4px
+            padding: 6px 12px
+        & .-submit
+            background-color: #5cb85c
+            border-color: #4cae4c
+            color: #FFF
+            font-size: 15px
+            font-weight: 500
+    &.-projetos
+        margin: 3% auto
+        text-align: center
+        width: 70%
+        >.listaprojetos
+            margin-top: 10px
+            list-style: none
+            text-align: left
+            >.itemprojeto
+                padding: 5px
+                &:hover
+                    background-color: $overcolor-claro 
+                    color: #FFF 
+    &.-link
+        display: none
+        box-shadow: none
+        border: 0
+        >.listaatribo
+            list-style: none    
+            >.atributo 
+                >.listalink
+                    text-align: left
+                    list-style: none
+                    >.link
+                        border: 1px solid #000
+                        display: inline-block   
+                        padding: 6px 12px 
+                        width: 30%
