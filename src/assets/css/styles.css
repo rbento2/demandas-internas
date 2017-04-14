@@ -1,17 +1,80 @@
 /*------------------- Variaveis -------------------*/
-/* ------------------ Estilo ----------------------*/
 * {
   margin: 0px;
-  padding: 0px;
   border: 0px;
+  padding: 0px;
 }
 
 /*Reset*/
-/*Menu superior*/
+body {
+  font-family: 'Arial Rounded MT Bold','Tahoma';
+}
+
 .menu-superior {
   width: 100%;
   background-color: #4682B4;
   position: relative;
+}
+
+.menu-superior.-claro {
+  background-color: #d52b1e;
+}
+
+.menu-superior.-claro > .listaoperadora > .itemoperadora:hover {
+  background-color: #8B0000;
+}
+
+.menu-superior.-nextel {
+  background-color: #ff6f00;
+}
+
+.menu-superior.-nextel > .listaoperadora > .itemoperadora:hover {
+  background-color: #FFA500;
+}
+
+.menu-superior.-oi {
+  background: -webkit-linear-gradient(14deg, rgba(234, 40, 140, 0.9), rgba(246, 79, 60, 0.9) 80%);
+  background: linear-gradient(76deg, rgba(234, 40, 140, 0.9), rgba(246, 79, 60, 0.9) 80%);
+}
+
+.menu-superior.-oi > .listaoperadora > .itemoperadora:hover {
+  background-color: #C71585;
+}
+
+.menu-superior.-tim {
+  background-color: #004691;
+}
+
+.menu-superior.-tim > .listaoperadora > .itemoperadora:hover {
+  background-color: blue;
+}
+
+.menu-superior.-vivo {
+  background-color: purple;
+}
+
+.menu-superior.-vivo > .listaoperadora > .itemoperadora:hover {
+  background-color: #4B0082;
+}
+
+.menu-superior > .listaoperadora {
+  text-align: right;
+}
+
+.menu-superior > .listaoperadora > .itemoperadora {
+  color: #FFF;
+  display: inline-block;
+  list-style: none;
+  padding: 15px;
+}
+
+.menu-superior > .listaoperadora > .itemoperadora:hover {
+  background-color: #104E8B;
+}
+
+.menu-superior > .listaoperadora > .itemoperadora > .link {
+  color: #FFF;
+  text-decoration: none;
 }
 
 .menu-superior > .titulo {
@@ -25,45 +88,75 @@
   width: 150px;
 }
 
-.menu-superior > .lista {
-  text-align: right;
-}
-
-.menu-superior > .lista > .itemlista {
-  color: #FFF;
-  display: inline-block;
-  list-style: none;
-  padding: 15px;
-}
-
-.menu-superior > .lista > .itemlista:hover {
-  background-color: #104E8B;
-}
-
-/*Componente Login*/
-.form-login {
+.form {
   border: 1px solid #696969;
   border-radius: 10px;
   box-shadow: 1px 1px 15px 1px #696969;
-  margin: 10% auto;
   padding: 30px;
   position: relative;
   text-align: center;
+}
+
+.form.-login {
+  margin: 10% auto;
   width: 30%;
 }
 
-.form-login > .input {
+.form.-login > .input {
   border: 1px solid #000;
   border-radius: 4px;
   padding: 6px 12px;
 }
 
-.form-login .-submit {
+.form.-login .-submit {
   background-color: #5cb85c;
   border-color: #4cae4c;
   color: #FFF;
   font-size: 15px;
   font-weight: 500;
+}
+
+.form.-projetos {
+  margin: 3% auto;
+  text-align: center;
+  width: 70%;
+}
+
+.form.-projetos > .listaprojetos {
+  margin-top: 10px;
+  list-style: none;
+  text-align: left;
+}
+
+.form.-projetos > .listaprojetos > .itemprojeto {
+  padding: 5px;
+}
+
+.form.-projetos > .listaprojetos > .itemprojeto:hover {
+  background-color: #8B0000;
+  color: #FFF;
+}
+
+.form.-link {
+  display: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.form.-link > .listaatribo {
+  list-style: none;
+}
+
+.form.-link > .listaatribo > .atributo > .listalink {
+  text-align: left;
+  list-style: none;
+}
+
+.form.-link > .listaatribo > .atributo > .listalink > .link {
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 6px 12px;
+  width: 30%;
 }
 
 /*# sourceMappingURL=maps/styles.css.map */
