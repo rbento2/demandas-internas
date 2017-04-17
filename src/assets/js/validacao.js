@@ -1,7 +1,12 @@
-window.addEventListener("load",function(){
+    var itemprojeto = document.getElementsByClassName("itemprojeto")
+    
+    function exibirUrl(e){
+        e.style.display = "none";
+    }
 
-    document.getElementsByClassName("itemprojeto").addEventListener("click",function(){
-        document.getElementsByClassName("form -link").style.display = "block";
-    });
-
-});
+    for(var i =0; i<itemprojeto.length;i++){
+        itemprojeto.addEventListener("click",exibirUrl(itemprojeto[i]),false);
+        
+    }
+    
+   
