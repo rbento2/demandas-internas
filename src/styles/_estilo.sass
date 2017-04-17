@@ -23,50 +23,62 @@ body
    width: 100%
    background-color: $cor-celulardireto
    position: relative
+   >.listaoperadora
+        text-align: right
+        >.linkmenu
+            >.itemoperadora
+                color:#FFF 
+                display: inline-block
+                list-style: none
+                padding: 15px
+                &:hover
+                    background-color: $overcolor-celulardireto
+                    cursor: pointer    
+                >.link
+                    color: #FFF
+                    text-decoration: none
    &.-claro
         background-color: $cor-claro
         >.listaoperadora
-            >.itemoperadora
-             &:hover
-                background-color: $overcolor-claro     
+            >.linkmenu
+                >.itemoperadora
+                    &:hover
+                        background-color: $overcolor-claro   
+                        cursor: pointer  
    &.-nextel
         background-color: $cor-nextel
         >.listaoperadora
-            >.itemoperadora
-             &:hover
-                background-color: $overcolor-nextel
+            >.linkmenu
+                >.itemoperadora
+                    &:hover
+                        background-color: $overcolor-nextel
+                        cursor: pointer  
    &.-oi
         background: $cor-oi
         >.listaoperadora
-            >.itemoperadora
-             &:hover
-                background-color: $overcolor-oi
+            >.linkmenu
+                >.itemoperadora
+                    &:hover
+                        background-color: $overcolor-oi
+                        cursor: pointer  
    &.-tim
         background-color: $cor-tim
         >.listaoperadora
-            >.itemoperadora
-             &:hover
-                background-color: $overcolor-tim
+            >.linkmenu
+                >.itemoperadora
+                    &:hover
+                        background-color: $overcolor-tim
+                        cursor: pointer  
    &.-vivo
         background-color: $cor-vivo
         >.listaoperadora
-            >.itemoperadora
-             &:hover
-                background-color: $overcolor-vivo
-   >.listaoperadora
-        text-align: right
-        >.itemoperadora
-            color:#FFF 
-            display: inline-block
-            list-style: none
-            padding: 15px
-            &:hover
-                background-color: $overcolor-celulardireto  
-            >.link
-                color: #FFF
-                text-decoration: none
+            >.linkmenu
+                >.itemoperadora
+                    &:hover
+                        background-color: $overcolor-vivo
+                        cursor: pointer  
                               
-   >.titulo
+   >.logo-cd
         color: #FFF
         height: 22px
         left: 3%
@@ -74,9 +86,6 @@ body
         top: 50%
         transform: translateY(-50%)
         width: 150px
-
-
-
 
 .form
     border: 1px solid #696969
@@ -107,22 +116,49 @@ body
             list-style: none
             text-align: left
             >.itemprojeto
+                font-weight: bold
                 padding: 5px
                 &:hover
-                    background-color: $overcolor-claro 
                     color: #FFF 
+                    cursor: pointer  
+                    &.-claro
+                        background-color: $overcolor-claro
+                    &.-oi
+                        background-color: $overcolor-oi
+                    &.-nextel
+                        background-color: $overcolor-nextel
+                    &.-tim
+                        background-color: $overcolor-tim
+                    &.-vivo
+                        background-color: $overcolor-vivo   
     &.-link
-        display: none
-        box-shadow: none
         border: 0
+        box-shadow: none
+        display: none
         >.listaatribo
             list-style: none    
             >.atributo 
                 >.listalink
-                    text-align: left
                     list-style: none
+                    text-align: left
                     >.link
-                        border: 1px solid #000
                         display: inline-block   
+                        font-weight: 300
                         padding: 6px 12px 
                         width: 30%
+
+.btn-adicionar
+    background-color: green
+    border-radius: 25px
+    float: right
+    margin-right: 13%
+    padding: 17px
+    position: relative
+    >.mais
+        color: white
+        cursor: pointer
+        font-size: 25px
+        left: 50%
+        position: absolute
+        top: 48%
+        transform: translate(-50%, -50%)
