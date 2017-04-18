@@ -16,20 +16,43 @@ body {
   position: relative;
 }
 
+.menu-superior > .listaoperadora {
+  text-align: right;
+}
+
+.menu-superior > .listaoperadora > .linkmenu > .itemoperadora {
+  color: #FFF;
+  display: inline-block;
+  list-style: none;
+  padding: 15px;
+}
+
+.menu-superior > .listaoperadora > .linkmenu > .itemoperadora:hover {
+  background-color: #104E8B;
+  cursor: pointer;
+}
+
+.menu-superior > .listaoperadora > .linkmenu > .itemoperadora > .link {
+  color: #FFF;
+  text-decoration: none;
+}
+
 .menu-superior.-claro {
   background-color: #d52b1e;
 }
 
-.menu-superior.-claro > .listaoperadora > .itemoperadora:hover {
+.menu-superior.-claro > .listaoperadora > .linkmenu > .itemoperadora:hover {
   background-color: #8B0000;
+  cursor: pointer;
 }
 
 .menu-superior.-nextel {
   background-color: #ff6f00;
 }
 
-.menu-superior.-nextel > .listaoperadora > .itemoperadora:hover {
+.menu-superior.-nextel > .listaoperadora > .linkmenu > .itemoperadora:hover {
   background-color: #FFA500;
+  cursor: pointer;
 }
 
 .menu-superior.-oi {
@@ -37,47 +60,30 @@ body {
   background: linear-gradient(76deg, rgba(234, 40, 140, 0.9), rgba(246, 79, 60, 0.9) 80%);
 }
 
-.menu-superior.-oi > .listaoperadora > .itemoperadora:hover {
+.menu-superior.-oi > .listaoperadora > .linkmenu > .itemoperadora:hover {
   background-color: #C71585;
+  cursor: pointer;
 }
 
 .menu-superior.-tim {
   background-color: #004691;
 }
 
-.menu-superior.-tim > .listaoperadora > .itemoperadora:hover {
+.menu-superior.-tim > .listaoperadora > .linkmenu > .itemoperadora:hover {
   background-color: blue;
+  cursor: pointer;
 }
 
 .menu-superior.-vivo {
   background-color: purple;
 }
 
-.menu-superior.-vivo > .listaoperadora > .itemoperadora:hover {
+.menu-superior.-vivo > .listaoperadora > .linkmenu > .itemoperadora:hover {
   background-color: #4B0082;
+  cursor: pointer;
 }
 
-.menu-superior > .listaoperadora {
-  text-align: right;
-}
-
-.menu-superior > .listaoperadora > .itemoperadora {
-  color: #FFF;
-  display: inline-block;
-  list-style: none;
-  padding: 15px;
-}
-
-.menu-superior > .listaoperadora > .itemoperadora:hover {
-  background-color: #104E8B;
-}
-
-.menu-superior > .listaoperadora > .itemoperadora > .link {
-  color: #FFF;
-  text-decoration: none;
-}
-
-.menu-superior > .titulo {
+.menu-superior > .logo-cd {
   color: #FFF;
   height: 22px;
   left: 3%;
@@ -129,18 +135,39 @@ body {
 }
 
 .form.-projetos > .listaprojetos > .itemprojeto {
+  font-weight: bold;
   padding: 5px;
 }
 
 .form.-projetos > .listaprojetos > .itemprojeto:hover {
-  background-color: #8B0000;
   color: #FFF;
+  cursor: pointer;
+}
+
+.form.-projetos > .listaprojetos > .itemprojeto:hover.-claro {
+  background-color: #8B0000;
+}
+
+.form.-projetos > .listaprojetos > .itemprojeto:hover.-oi {
+  background-color: #C71585;
+}
+
+.form.-projetos > .listaprojetos > .itemprojeto:hover.-nextel {
+  background-color: #FFA500;
+}
+
+.form.-projetos > .listaprojetos > .itemprojeto:hover.-tim {
+  background-color: blue;
+}
+
+.form.-projetos > .listaprojetos > .itemprojeto:hover.-vivo {
+  background-color: #4B0082;
 }
 
 .form.-link {
-  display: none;
-  box-shadow: none;
   border: 0;
+  box-shadow: none;
+  display: none;
 }
 
 .form.-link > .listaatribo {
@@ -148,15 +175,35 @@ body {
 }
 
 .form.-link > .listaatribo > .atributo > .listalink {
-  text-align: left;
   list-style: none;
+  text-align: left;
 }
 
 .form.-link > .listaatribo > .atributo > .listalink > .link {
-  border: 1px solid #000;
   display: inline-block;
+  font-weight: 300;
   padding: 6px 12px;
   width: 30%;
+}
+
+.btn-adicionar {
+  background-color: green;
+  border-radius: 25px;
+  float: right;
+  margin-right: 13%;
+  padding: 17px;
+  position: relative;
+}
+
+.btn-adicionar > .mais {
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  left: 50%;
+  position: absolute;
+  top: 48%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=maps/styles.css.map */
