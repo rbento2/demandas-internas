@@ -201,7 +201,7 @@ body {
   font-size: 25px;
   left: 50%;
   position: absolute;
-  top: 48%;
+  top: 46%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
