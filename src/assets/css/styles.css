@@ -10,6 +10,20 @@ body {
   font-family: 'Arial Rounded MT Bold','Tahoma';
 }
 
+.input-default {
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.input-default .-submit {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 500;
+}
+
 .menu-superior {
   width: 100%;
   background-color: #4682B4;
@@ -108,20 +122,6 @@ body {
   width: 30%;
 }
 
-.form.-login > .input {
-  border: 1px solid #000;
-  border-radius: 4px;
-  padding: 6px 12px;
-}
-
-.form.-login .-submit {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
-  color: #FFF;
-  font-size: 15px;
-  font-weight: 500;
-}
-
 .form.-projetos {
   margin: 3% auto;
   text-align: center;
@@ -204,6 +204,23 @@ body {
   top: 46%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.icone {
+  float: right;
+  height: 15px;
+  padding: 5px;
+  width: 15px;
+}
+
+.novo-projeto {
+  border: 1px solid #000;
+}
+
+.novo-projeto .box-input {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
 }
 
 /*# sourceMappingURL=maps/styles.css.map */

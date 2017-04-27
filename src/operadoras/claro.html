@@ -21,7 +21,7 @@
        <section class="form -projetos">
            <h3>Projetos Ativos</h3>
            <ul class="listaprojetos">
-               <li class="itemprojeto -claro">Claro Fácil</li>
+               <li class="itemprojeto -claro" onClick="Claro().exibirUrl()">Claro Fácil</li>
                <section class="form -link">
                     <ul class="listaatribo">
                         <li class="atributo">
@@ -39,6 +39,14 @@
                             </ul>
                         </li>        
                     </ul>
+                    <span>
+                        <a href="#">
+                            <img src="../img/delete.png" class="icone" alt="Excluir"/>
+                        </a>
+                        <a href="#">
+                            <img src="../img/editar.png" class="icone" alt="Editar"/>
+                        </a>
+                    </span> 
                </section>
                <li class="itemprojeto -claro">Planos Claro Controle</li>
                <section class="form -link">
@@ -58,6 +66,14 @@
                             </ul>
                         </li>        
                     </ul>
+                    <span>
+                        <a href="#">
+                            <img src="../img/delete.png" class="icone" alt="Excluir"/>
+                        </a>
+                        <a href="#">
+                            <img src="../img/editar.png" class="icone" alt="Editar"/>
+                        </a>
+                    </span>        
                </section>
                <li class="itemprojeto -claro">Claro Modal</li>
                <section class="form -link">
@@ -69,7 +85,7 @@
                                 <li class="link">Link de Produção </li>
                             </ul>
                         </li>
-                        <li class="atributo">
+                        <li class="atributo" id="atributo">
                             <ul class="listalink">
                                 <li class="link"><a href="#">xxx</a></li>
                                 <li class="link"><a href="#">xxx</a></li>
@@ -77,12 +93,38 @@
                             </ul>
                         </li>        
                     </ul>
+                    <span>
+                        <a href="#">
+                            <img src="../img/delete.png" class="icone" alt="Excluir"/>
+                        </a>
+                        <a href="#">
+                            <img src="../img/editar.png" class="icone" alt="Editar"/>
+                        </a>
+                    </span> 
                </section>
            </ul>
        </section>
        <div class="btn-adicionar">
-           <span class="mais">+</span>
+           <span class="mais" onclick="">+</span>
+       </div>
+       <div id="novo-projeto" class="novo-projeto">
+            <div class="box-input">
+                <label class="lbl">Nome do projeto</label>
+                <input type="text" class="input-default -projeto">
+            </div>
+            <div class="box-input">
+                <label class="lbl">Link de Dev</label>
+                <input type="text" class="input-default -linkdev">
+            </div>
+            <div class="box-input">
+                <label class="lbl">Link de HMG</label>
+                <input type="text" class="input-default -linkhmg">
+            </div>
+            <div class="box-input">
+                <label class="lbl">Link de produção</label>
+                <input type="text" class="input-default -linkprod">
+            </div>
        </div>
     </body>
-    <script src="../assets/js/validacao.js"></script>
+    <script src="./js/Claro.js"></script>
 </html>
