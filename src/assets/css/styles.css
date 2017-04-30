@@ -186,6 +186,17 @@ body {
   width: 30%;
 }
 
+.form.-novoprojeto {
+  background: #fff;
+  margin: 3% auto;
+  width: 70%;
+}
+
+.form.-novoprojeto .box-input {
+  display: inline-block;
+  width: 35%;
+}
+
 .btn-adicionar {
   background-color: green;
   border-radius: 25px;
@@ -206,6 +217,11 @@ body {
           transform: translate(-50%, -50%);
 }
 
+.btn-adicionar > .mais > a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .icone {
   float: right;
   height: 15px;
@@ -213,14 +229,27 @@ body {
   width: 15px;
 }
 
-.novo-projeto {
-  border: 1px solid #000;
+.bg-modal {
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
-.novo-projeto .box-input {
-  display: inline-block;
-  width: 50%;
-  text-align: left;
+.bg-modal:target {
+  display: block;
+  pointer-events: auto;
+}
+
+.bg-modal .close {
+  color: #000;
+  float: right;
+  font-weight: bold;
+  margin: -25px -20px;
+  position: relative;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=maps/styles.css.map */

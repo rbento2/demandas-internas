@@ -146,6 +146,13 @@ body
                         font-weight: 300
                         padding: 6px 12px 
                         width: 30%
+    &.-novoprojeto 
+        background: #fff
+        margin: 3% auto
+        width: 70%
+        .box-input
+            display: inline-block
+            width: 35%
 
 .btn-adicionar
     background-color: green
@@ -158,10 +165,14 @@ body
         color: white
         cursor: pointer
         font-size: 25px
-        left: 50%
+        left: 50%   
         position: absolute
         top: 46%
         transform: translate(-50%, -50%)
+        > a
+            color: #fff
+            text-decoration: none
+
 
 .icone
     float: right
@@ -169,14 +180,22 @@ body
     padding: 5px
     width: 15px
 
-
-
-.novo-projeto
-    border: 1px solid #000
-    
-    .box-input
-        display: inline-block
-        width: 50%
-        text-align: left
+.bg-modal
+    background: rgba(0,0,0,0.5)
+    display: none
+    height: 100%
+    position: fixed
+    width: 100%
+    z-index: 1
+    &:target
+        display: block
+        pointer-events: auto
         
- 
+    .close
+        color: #000
+        float: right
+        font-weight: bold
+        margin: -25px -20px
+        position: relative
+        text-decoration: none
+            
