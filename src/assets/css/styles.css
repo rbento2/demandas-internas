@@ -193,6 +193,7 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .form.-novoprojeto > .adicione {
   font-weight: bold;
 }
@@ -218,6 +219,11 @@ body {
   position: absolute;
   width: 100%;
   z-index: 1;
+=======
+.form.-novoprojeto .box-input {
+  display: inline-block;
+  width: 35%;
+>>>>>>> 0582a318f3734a3bbbc3f6217bd373581944e117
 =======
 .form.-novoprojeto .box-input {
   display: inline-block;
@@ -262,7 +268,10 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 0582a318f3734a3bbbc3f6217bd373581944e117
 .bg-modal {
   background: rgba(0, 0, 0, 0.5);
   display: none;
