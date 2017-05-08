@@ -1,27 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Celular Direto</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="../assets/css/styles.css">
-    </head>
-    <body>
-        <nav>
-            <div class="menu-superior -claro">
-                <img src="../img/logo-cd.png" class="logo-cd" />
-                <ul class="listaoperadora">
-                    <a href="../operadoras/claro.html" class="linkmenu"/><li class="itemoperadora">Claro</li></a>
-                    <a href="../operadoras/nextel.html" class="linkmenu"/><li class="itemoperadora">Nextel</li></a>
-                    <a href="../operadoras/oi.html" class="linkmenu"/><li class="itemoperadora">Oi</li></a>
-                    <a href="../operadoras/tim.html" class="linkmenu"/><li class="itemoperadora">Tim</li></a>
-                    <a href="../operadoras/vivo.html" class="linkmenu"/><li class="itemoperadora">Vivo</li></a>
-                </ul> 
+
+<head>
+    <title>Celular Direto</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="menu-superior -claro">
+            <img src="../img/logo-cd.png" class="logo-cd" />
+            <ul class="listaoperadora">
+                <a href="../operadoras/claro.html" class="linkmenu" />
+                <li class="itemoperadora">Claro</li>
+                </a>
+                <a href="../operadoras/nextel.html" class="linkmenu" />
+                <li class="itemoperadora">Nextel</li>
+                </a>
+                <a href="../operadoras/oi.html" class="linkmenu" />
+                <li class="itemoperadora">Oi</li>
+                </a>
+                <a href="../operadoras/tim.html" class="linkmenu" />
+                <li class="itemoperadora">Tim</li>
+                </a>
+                <a href="../operadoras/vivo.html" class="linkmenu" />
+                <li class="itemoperadora">Vivo</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <div id="novo-projeto" class="bg-modal">
+        <div class="form -novoprojeto">
+            <a href="#" class="close">X</a>
+            <h3>Novo projeto</h3>
+            <div class="box-input">
+                <label class="lbl">Nome do projeto</label>
+                <input type="text" class="input-default -projeto">
+            </div>
+            <div class="box-input">
+                <label class="lbl">Link de Dev</label>
+                <input type="text" class="input-default -linkdev">
+            </div>
+            <div class="box-input">
+                <label class="lbl">Link de HMG</label>
+                <input type="text" class="input-default -linkhmg">
+            </div>
+            <div class="box-input">
+                <label class="lbl">Link de produção</label>
+                <input type="text" class="input-default -linkprod">
             </div>
         </nav>
+        <div id="novo-projeto" class="box-novoprojeto">
+            <div class="form -novoprojeto">
+                <p class="adicione">Adicione um Novo Projeto</p>
+                <div class="nomeprojeto">
+                    <label class="lbl">Nome do projeto</label>
+                    <input type="text" class="input-default -projeto">
+                </div>
+                <div class="box-input">
+                    <label class="lbl">Link de DEV</label>
+                    <input type="text" class="input-default -linkdev">
+                </div>
+                <div class="box-input">
+                    <label class="lbl">Link de HMG</label>
+                    <input type="text" class="input-default -linkhmg">
+                </div>
+                <div class="box-input">
+                    <label class="lbl">Link de PROD</label>
+                    <input type="text" class="input-default -linkprod">
+                </div>
+            </div>
+       </div>
        <section class="form -projetos">
            <h3>Projetos Ativos</h3>
            <ul class="listaprojetos">
-               <li class="itemprojeto -claro">Claro Fácil</li>
+               <li class="itemprojeto -claro" onClick="Claro().exibirUrl()">Claro Fácil</li>
                <section class="form -link">
                     <ul class="listaatribo">
                         <li class="atributo">
@@ -39,50 +93,114 @@
                             </ul>
                         </li>        
                     </ul>
-               </section>
-               <li class="itemprojeto -claro">Planos Claro Controle</li>
-               <section class="form -link">
-                    <ul class="listaatribo">
-                        <li class="atributo">
-                            <ul class="listalink">
-                                <li class="link">Link de Dev </li>
-                                <li class="link">Link de Hmg </li>
-                                <li class="link">Link de Produção </li>
-                            </ul>
-                        </li>
-                        <li class="atributo">
-                            <ul class="listalink">
-                                <li class="link"><a href="#">xxx</a></li>
-                                <li class="link"><a href="#">xxx</a></li>
-                                <li class="link"><a href="#">xxx</a></li>
-                            </ul>
-                        </li>        
-                    </ul>
-               </section>
-               <li class="itemprojeto -claro">Claro Modal</li>
-               <section class="form -link">
-                    <ul class="listaatribo">
-                        <li class="atributo">
-                            <ul class="listalink">
-                                <li class="link">Link de Dev </li>
-                                <li class="link">Link de Hmg </li>
-                                <li class="link">Link de Produção </li>
-                            </ul>
-                        </li>
-                        <li class="atributo">
-                            <ul class="listalink">
-                                <li class="link"><a href="#">xxx</a></li>
-                                <li class="link"><a href="#">xxx</a></li>
-                                <li class="link"><a href="#">xxx</a></li>
-                            </ul>
-                        </li>        
-                    </ul>
+                    <span>
+            </div>
+            <div class="box-input">
+                <label class="lbl">Link de produção</label>
+                <input type="text" class="input-default -linkprod">
+            </div>
+        </div>
+    </div>
+    <section id="home" class="form -projetos">
+        <h3>Projetos Ativos</h3>
+        <ul class="listaprojetos">
+            <li class="itemprojeto -claro" onClick="Claro().exibirUrl()">Claro Fácil</li>
+            <section class="form -link">
+                <ul class="listaatribo">
+                    <li class="atributo">
+                        <ul class="listalink">
+                            <li class="link">Link de Dev </li>
+                            <li class="link">Link de Hmg </li>
+                            <li class="link">Link de Produção </li>
+                        </ul>
+                    </li>
+                    <li class="atributo">
+                        <ul class="listalink">
+                            <li class="link"><a href="#">xxx</a></li>
+                            <li class="link"><a href="#">xxx</a></li>
+                            <li class="link"><a href="#">xxx</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <span>
+                        <a href="#">
+                            <img src="../img/delete.png" class="icone" alt="Excluir"/>
+                        </a>
+                        <a href="#">
+                            <img src="../img/editar.png" class="icone" alt="Editar"/>
+                        </a>
+                    </span>
+            </section>
+            <li class="itemprojeto -claro">Planos Claro Controle</li>
+            <section class="form -link">
+                <ul class="listaatribo">
+                    <li class="atributo">
+                        <ul class="listalink">
+                            <li class="link">Link de Dev </li>
+                            <li class="link">Link de Hmg </li>
+                            <li class="link">Link de Produção </li>
+                        </ul>
+                    </li>
+                    <li class="atributo">
+                        <ul class="listalink">
+                            <li class="link"><a href="#">xxx</a></li>
+                            <li class="link"><a href="#">xxx</a></li>
+                            <li class="link"><a href="#">xxx</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <span>
+                        <a href="#">
+                            <img src="../img/delete.png" class="icone" alt="Excluir"/>
+                        </a>
+                        <a href="#">
+                            <img src="../img/editar.png" class="icone" alt="Editar"/>
+                        </a>
+                    </span>
+            </section>
+            <li class="itemprojeto -claro">Claro Modal</li>
+            <section class="form -link">
+                <ul class="listaatribo">
+                    <li class="atributo">
+                        <ul class="listalink">
+                            <li class="link">Link de Dev </li>
+                            <li class="link">Link de Hmg </li>
+                            <li class="link">Link de Produção </li>
+                        </ul>
+                    </li>
+                    <li class="atributo" id="atributo">
+                        <ul class="listalink">
+                            <li class="link"><a href="#">xxx</a></li>
+                            <li class="link"><a href="#">xxx</a></li>
+                            <li class="link"><a href="#">xxx</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <span>
+                        <a href="#">
+                            <img src="../img/delete.png" class="icone" alt="Excluir"/>
+                        </a>
+                        <a href="#">
+                            <img src="../img/editar.png" class="icone" alt="Editar"/>
+                        </a>
+                    </span> 
                </section>
            </ul>
        </section>
        <div class="btn-adicionar">
-           <span class="mais">+</span>
+           <span class="mais" onclick=""><a href="#novo-projeto">+</a></span>
        </div>
+       
     </body>
-    <script src="../assets/js/validacao.js"></script>
+    <script src="./js/Claro.js"></script>
+                    </span>
+            </section>
+        </ul>
+    </section>
+    <div class="btn-adicionar">
+        <span class="mais" onclick=""><a href="#novo-projeto">+</a></span>
+    </div>
+
+</body>
+<script src="./js/Claro.js"></script>
 </html>

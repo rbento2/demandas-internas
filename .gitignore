@@ -1,0 +1,4 @@
+$ cat .gitignore
+
+# IGNORANDO TODOS OS ARQUIVOS DENTRO DE NODE MODULES
+node_modules/**/*
