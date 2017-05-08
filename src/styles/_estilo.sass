@@ -147,13 +147,41 @@ body
                         padding: 6px 12px 
                         width: 30%
 
+    &.-novoprojeto
+        background: #fff
+        margin: 3% auto
+        width: 70%
+        >.adicione
+            font-weight: bold
+        >.nomeprojeto
+            margin: 12px
+            width: 100%
+            text-align: left
+        .box-input
+            border: 0.5px solid #C0C0C0
+            display: inline-block
+            margin: 12px
+            text-align: center
+            width: 30%
+                    
+.box-novoprojeto
+    background: rgba(0,0,0,0.5)
+    display: none
+    height: 100%
+    position: absolute
+    width: 100%
+    z-index: 1
+
 .btn-adicionar
     background-color: green
     border-radius: 25px
-    float: right
-    margin-right: 13%
+    margin-left: 85%
     padding: 17px
-    position: relative
+    position: absolute
+    a
+        text-decoration: none
+        color: #FFF
+        
     >.mais
         color: white
         cursor: pointer
@@ -171,12 +199,3 @@ body
 
 
 
-.novo-projeto
-    border: 1px solid #000
-    
-    .box-input
-        display: inline-block
-        width: 50%
-        text-align: left
-        
- 

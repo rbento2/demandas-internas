@@ -18,6 +18,27 @@
                 </ul> 
             </div>
         </nav>
+        <div id="novo-projeto" class="box-novoprojeto">
+            <div class="form -novoprojeto">
+                <p class="adicione">Adicione um Novo Projeto</p>
+                <div class="nomeprojeto">
+                    <label class="lbl">Nome do projeto</label>
+                    <input type="text" class="input-default -projeto">
+                </div>
+                <div class="box-input">
+                    <label class="lbl">Link de DEV</label>
+                    <input type="text" class="input-default -linkdev">
+                </div>
+                <div class="box-input">
+                    <label class="lbl">Link de HMG</label>
+                    <input type="text" class="input-default -linkhmg">
+                </div>
+                <div class="box-input">
+                    <label class="lbl">Link de PROD</label>
+                    <input type="text" class="input-default -linkprod">
+                </div>
+            </div>
+       </div>
        <section class="form -projetos">
            <h3>Projetos Ativos</h3>
            <ul class="listaprojetos">
@@ -105,26 +126,9 @@
            </ul>
        </section>
        <div class="btn-adicionar">
-           <span class="mais" onclick="">+</span>
+           <span class="mais" onclick=""><a href="#novo-projeto">+</a></span>
        </div>
-       <div id="novo-projeto" class="novo-projeto">
-            <div class="box-input">
-                <label class="lbl">Nome do projeto</label>
-                <input type="text" class="input-default -projeto">
-            </div>
-            <div class="box-input">
-                <label class="lbl">Link de Dev</label>
-                <input type="text" class="input-default -linkdev">
-            </div>
-            <div class="box-input">
-                <label class="lbl">Link de HMG</label>
-                <input type="text" class="input-default -linkhmg">
-            </div>
-            <div class="box-input">
-                <label class="lbl">Link de produção</label>
-                <input type="text" class="input-default -linkprod">
-            </div>
-       </div>
+       
     </body>
     <script src="./js/Claro.js"></script>
 </html>

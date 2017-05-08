@@ -186,13 +186,50 @@ body {
   width: 30%;
 }
 
+.form.-novoprojeto {
+  background: #fff;
+  margin: 3% auto;
+  width: 70%;
+}
+
+.form.-novoprojeto > .adicione {
+  font-weight: bold;
+}
+
+.form.-novoprojeto > .nomeprojeto {
+  margin: 12px;
+  width: 100%;
+  text-align: left;
+}
+
+.form.-novoprojeto .box-input {
+  border: 0.5px solid #C0C0C0;
+  display: inline-block;
+  margin: 12px;
+  text-align: center;
+  width: 30%;
+}
+
+.box-novoprojeto {
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
 .btn-adicionar {
   background-color: green;
   border-radius: 25px;
-  float: right;
-  margin-right: 13%;
+  margin-left: 85%;
   padding: 17px;
-  position: relative;
+  position: absolute;
+}
+
+.btn-adicionar a {
+  text-decoration: none;
+  color: #FFF;
 }
 
 .btn-adicionar > .mais {
@@ -211,16 +248,6 @@ body {
   height: 15px;
   padding: 5px;
   width: 15px;
-}
-
-.novo-projeto {
-  border: 1px solid #000;
-}
-
-.novo-projeto .box-input {
-  display: inline-block;
-  width: 50%;
-  text-align: left;
 }
 
 /*# sourceMappingURL=maps/styles.css.map */
