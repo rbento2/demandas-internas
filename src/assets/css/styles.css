@@ -34,6 +34,11 @@ body {
   text-align: right;
 }
 
+.menu-superior > .listaoperadora > .linkmenu {
+  color: #FFF;
+  text-decoration: none;
+}
+
 .menu-superior > .listaoperadora > .linkmenu > .itemoperadora {
   color: #FFF;
   display: inline-block;
@@ -44,11 +49,6 @@ body {
 .menu-superior > .listaoperadora > .linkmenu > .itemoperadora:hover {
   background-color: #104E8B;
   cursor: pointer;
-}
-
-.menu-superior > .listaoperadora > .linkmenu > .itemoperadora > .link {
-  color: #FFF;
-  text-decoration: none;
 }
 
 .menu-superior.-claro {
@@ -192,17 +192,6 @@ body {
   width: 70%;
 }
 
-.form.-novoprojeto .box-input {
-  display: inline-block;
-  width: 35%;
-}
-
-.form.-novoprojeto {
-  background: #fff;
-  margin: 3% auto;
-  width: 70%;
-}
-
 .form.-novoprojeto > .adicione {
   font-weight: bold;
 }
@@ -219,15 +208,6 @@ body {
   margin: 12px;
   text-align: center;
   width: 30%;
-}
-
-.box-novoprojeto {
-  background: rgba(0, 0, 0, 0.5);
-  display: none;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
 }
 
 .btn-adicionar {
