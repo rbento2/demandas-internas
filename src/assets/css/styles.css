@@ -10,18 +10,23 @@ body {
   font-family: 'Arial Rounded MT Bold','Tahoma';
 }
 
-.input-default {
+.input {
   border: 1px solid #000;
   border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
   padding: 6px 12px;
 }
 
-.input-default .-submit {
+.input.-submit {
   background-color: #5cb85c;
   border-color: #4cae4c;
   color: #FFF;
-  font-size: 15px;
-  font-weight: 500;
+}
+
+.input.-modal {
+  background-color: #8B0000;
+  color: #FFF;
 }
 
 .menu-superior {
@@ -203,11 +208,15 @@ body {
 }
 
 .form.-novoprojeto .box-input {
-  border: 0.5px solid #C0C0C0;
   display: inline-block;
   margin: 12px;
   text-align: center;
-  width: 30%;
+  width: 29%;
+}
+
+.form.-novoprojeto .box-btn {
+  margin-right: 7%;
+  text-align: right;
 }
 
 .btn-adicionar {

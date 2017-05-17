@@ -18,6 +18,31 @@
                 </ul> 
             </div>
         </nav>
+        <div id="novo-projeto" class="bg-modal">
+            <div class="form -novoprojeto">
+                <a href="#" class="close">X</a>
+                <h3>Novo projeto</h3>
+                <div class="nomeprojeto">
+                    <label class="lbl">Nome do projeto</label>
+                    <input type="text" class="input -projeto">
+                </div>
+                <div class="box-input">
+                    <label class="lbl">Link de Dev</label>
+                    <input type="text" class="input -linkdev">
+                </div>
+                <div class="box-input">
+                    <label class="lbl">Link de HMG</label>
+                    <input type="text" class="input -linkhmg">
+                </div>
+                <div class="box-input">
+                    <label class="lbl">Link de produção</label>
+                    <input type="text" class="input -linkprod">
+                </div>
+                <div class="box-btn">
+                    <input type="submit" class="input -submit" value="Enviar" />
+                </div>
+            </div>
+        </div>
         <section class="form -projetos">
            <h3>Projetos Ativos</h3>
            <ul class="listaprojetos">
@@ -43,7 +68,7 @@
            </ul>
        </section>
        <div class="btn-adicionar">
-           <span class="mais">+</span>
+           <span class="mais"><a href="#novo-projeto">+</a></span>
        </div>
     </body>
     <script src="../assets/js/validacao.js"></script>

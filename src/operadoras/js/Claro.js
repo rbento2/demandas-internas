@@ -6,12 +6,14 @@
             e.nextElementSibling.style.display = "none";
         }
     }
+
     (function(){ // coloca um listener em todos os itensprojetos
         var itemprojeto = document.getElementsByClassName("itemprojeto")
         for (var i = 0; i < itemprojeto.length; i++) {
             itemprojeto[i].onclick = function() { exibirUrl(this); }
         }
     })();
+    
     var btnmais = document.getElementsByClassName("mais");
-    console.log(btnmais[0]);
-    btnmais[0].onclick = function() { adicionaProjeto(); }
+    console.log(btnmais);
+   /* btnmais[0].onclick = function() { adicionaProjeto(); }*/
